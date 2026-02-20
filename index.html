@@ -593,7 +593,7 @@ function loadMqttLibAndConnect(){
 
 function connectMqtt(){
   try{
-    mqttClient = mqtt.connect("wss://broker.hivemq.com:8884/mqtt");
+    mqttClient = mqtt.connect("wss://test.mosquitto.org:8081");
   } catch(e){
     console.log("MQTT connect error", e);
     return;
